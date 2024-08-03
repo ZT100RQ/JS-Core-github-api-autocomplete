@@ -1,0 +1,102 @@
+body {
+    padding: 0 30px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.section {
+    margin-top: 50px;
+    min-width: 200px;
+    max-width: 500px;
+    background: rgba(196, 196, 196, 1);
+    padding: 60px 70px;
+}
+
+.search-input {
+    max-width: 500px;
+    min-width: 230px;
+}
+
+.search-input.active .search-autocom{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.search-input.active .search-autocom li {
+    display: block;
+}
+
+input {
+    width: 100%;
+    line-height: 56.25px;
+    font-size: 2rem;
+    font-weight: 400;
+    outline: none;
+    border:none;
+    height: 61px;
+    padding: 5px 13px;
+    box-sizing: border-box;
+    min-width: 230px;
+}
+
+.search-autocom {
+    max-height: 220px;
+    overflow-y: auto;
+    min-width: 230px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.search-autocom li {
+    list-style: none;
+    width: 100%;
+    cursor: default;
+    background: rgba(227, 227, 227, 1);
+    padding: 4px 13px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 1);
+    font-size: 1.4rem;
+    line-height: 33px;
+    height: 44px;
+    display: none; /* Отключил лишки поиска */
+    min-width: 230px;
+}
+
+.search-result li {
+    background: rgba(226, 123, 235, 1);
+    padding: 8px 13px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    box-sizing: border-box;
+    position: relative;
+    max-width: 500px;
+    min-width: 230px;
+    /* display: none; */
+}
+
+li p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 1);
+}
+
+li button {
+    position: absolute;
+    top: 30px;
+    right: 34px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    width: 46px;
+    height: 43px;
+    background-image: url('V3.svg'), url('V5.svg');
+    background-repeat: none;
+}
+li button:hover {
+    scale: 130%;
+    opacity: 30%;
+}
+.search-result li:first-child {
+    margin-top: 45px;
+}
