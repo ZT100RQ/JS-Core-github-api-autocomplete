@@ -1,14 +1,15 @@
 body {
     padding: 0 30px;
     color: rgba(0, 0, 0, 1);
+    margin: 0 auto;
 }
 
 .section {
-    margin-top: 50px;
     min-width: 200px;
     max-width: 500px;
     background: rgba(196, 196, 196, 1);
     padding: 60px 70px;
+    margin: 100px auto auto;
 }
 
 .search-input {
@@ -23,6 +24,10 @@ body {
 
 .search-input.active .search-autocom li {
     display: block;
+}
+
+.search-input li:hover {
+    background-color: white;
 }
 
 input {
