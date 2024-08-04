@@ -92,7 +92,7 @@ function showSuggestions(list) {
   searchAuto.innerHTML = listData;
 }
 
-let newEvent = debounce(repositoryEvent, 500);
+let newEvent = debounce(repositoryEvent, 400);
 
 searchInput.addEventListener("input", newEvent);
 
